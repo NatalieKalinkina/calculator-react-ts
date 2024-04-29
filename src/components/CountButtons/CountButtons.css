@@ -1,6 +1,7 @@
 .count-buttons {
   display: flex;
   flex-direction: column;
+  grid-area: count;
 }
 
 .count-button {
@@ -10,6 +11,16 @@
   background-color: transparent;
   background-size: 40px 40px;
   background-repeat: no-repeat;
+  border: none;
+}
+
+.count-button:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.count-button:active {
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border: none;
 }
 
 .count-button_type_plus {

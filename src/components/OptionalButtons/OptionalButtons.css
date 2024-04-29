@@ -1,0 +1,25 @@
+.optional-buttons {
+  grid-area: optional;
+}
+
+.optional-buttons_item {
+  background-color: transparent;
+  border: none;
+  padding: 25px;
+  font-size: 32px;
+  line-height: 40px;
+  color: #fff;
+  font-weight: 500;
+  box-sizing: border-box;
+  width: 90px;
+  height: 90px;
+}
+
+.optional-buttons_item:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.optional-buttons_item:active {
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border: none;
+}

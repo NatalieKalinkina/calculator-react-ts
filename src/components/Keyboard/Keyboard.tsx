@@ -5,10 +5,11 @@ import { OptionalButtons } from '../OptionalButtons/OptionalButtons';
 
 export const Keyboard = () => {
   return (
-    <>
+    <section className="keyboard">
       <OptionalButtons />
-      <Numbers />
+
       <CountButtons />
-    </>
+      <Numbers />
+    </section>
   );
 };

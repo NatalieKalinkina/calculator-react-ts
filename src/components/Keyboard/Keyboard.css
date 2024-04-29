@@ -1,0 +1,8 @@
+.keyboard {
+  display: grid;
+  grid-template-columns: 270px 90px;
+  grid-template-rows: 90px 360px;
+  grid-template-areas:
+    'optional count'
+    'numbers count';
+}
