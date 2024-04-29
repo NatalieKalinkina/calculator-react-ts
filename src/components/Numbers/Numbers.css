@@ -12,6 +12,7 @@
   line-height: 40px;
   color: #fff;
   font-weight: 500;
+  box-sizing: border-box;
 }
 
 .nums__item:hover {

@@ -1,11 +1,13 @@
 import './App.css';
+import { ResultScreen } from './components/ResultScreen/ResultScreen';
 import { Numbers } from './components/Numbers/Numbers';
 
 function App() {
   return (
-    <section className="app">
+    <main className="app">
+      <ResultScreen />
       <Numbers />
-    </section>
+    </main>
   );
 }
 
