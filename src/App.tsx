@@ -1,12 +1,12 @@
 import './App.css';
 import { ResultScreen } from './components/ResultScreen/ResultScreen';
-import { Numbers } from './components/Numbers/Numbers';
+import { Keyboard } from './components/Keyboard/Keyboard';
 
 function App() {
   return (
     <main className="app">
       <ResultScreen />
-      <Numbers />
+      <Keyboard />
     </main>
   );
 }
