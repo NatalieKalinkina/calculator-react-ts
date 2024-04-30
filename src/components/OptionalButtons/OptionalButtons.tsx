@@ -1,11 +1,12 @@
 import './OptionalButtons.css';
+import { TextButton } from '../TextButton/TextButton';
 
 export const OptionalButtons = () => {
   return (
     <section className="optional-buttons">
-      <button className="optional-buttons_item">AC</button>
-      <button className="optional-buttons_item">( )</button>
-      <button className="optional-buttons_item">%</button>
+      <TextButton text="AC" />
+      <TextButton text="( )" />
+      <TextButton text="%" />
     </section>
   );
 };

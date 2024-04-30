@@ -1,0 +1,12 @@
+.text-button {
+  background-color: transparent;
+  border: none;
+  padding: 25px;
+  font-size: 32px;
+  line-height: 40px;
+  color: #fff;
+  font-weight: 500;
+  box-sizing: border-box;
+  width: 90px;
+  height: 90px;
+}

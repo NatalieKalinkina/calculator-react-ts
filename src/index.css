@@ -9,3 +9,21 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
+.button {
+  background-color: transparent;
+  border: none;
+  padding: 25px;
+  box-sizing: border-box;
+  width: 90px;
+  height: 90px;
+}
+
+.button:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.button:active {
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border: none;
+}
