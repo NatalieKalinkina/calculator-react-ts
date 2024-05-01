@@ -11,8 +11,10 @@ export const Keyboard = () => {
       <OptionalButtons />
       <CountButtons />
       <Numbers />
-      <IconButton type="delete" />
-      <TextButton text="." />
+      <div className="keyboard__bottom">
+        <IconButton type="delete" />
+        <TextButton text="." />
+      </div>
     </section>
   );
 };

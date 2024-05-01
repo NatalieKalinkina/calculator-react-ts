@@ -1,8 +1,15 @@
 .keyboard {
   display: grid;
   grid-template-columns: 270px 90px;
-  grid-template-rows: 90px 360px;
+  grid-template-rows: 90px 270px;
   grid-template-areas:
     'optional count'
-    'numbers count';
+    'numbers count'
+    'bottom count';
+}
+
+.keyboard__bottom {
+  display: flex;
+  justify-content: space-between;
+  grid-area: bottom;
 }

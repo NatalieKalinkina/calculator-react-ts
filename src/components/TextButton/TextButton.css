@@ -10,3 +10,7 @@
   width: 90px;
   height: 90px;
 }
+
+#text-button_type_0 {
+  grid-column-start: 2;
+}

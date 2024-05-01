@@ -5,7 +5,7 @@ export const OptionalButtons = () => {
   return (
     <section className="optional-buttons">
       <TextButton text="AC" />
-      <TextButton text="( )" />
+      <TextButton text="(&ensp;)" />
       <TextButton text="%" />
     </section>
   );

@@ -4,27 +4,27 @@
   background-repeat: no-repeat;
 }
 
-.icon-button_type_plus {
+#icon-button_type_plus {
   background-image: url('../../assets/plus_icon.svg');
 }
 
-.icon-button_type_minus {
+#icon-button_type_minus {
   background-image: url('../../assets/minus_icon.svg');
 }
 
-.icon-button_type_multiplication {
+#icon-button_type_multiplication {
   background-image: url('../../assets/multiplication_icon.svg');
 }
 
-.icon-button_type_devision {
+#icon-button_type_devision {
   background-image: url('../../assets/division_icon.svg');
 }
 
-.icon-button_type_total {
+#icon-button_type_total {
   background-color: #fca2a2;
   background-image: url('../../assets/total_icon.svg');
 }
 
-.icon-button_type_delete {
+#icon-button_type_delete {
   background-image: url('../../assets/delete_icon.svg');
 }
