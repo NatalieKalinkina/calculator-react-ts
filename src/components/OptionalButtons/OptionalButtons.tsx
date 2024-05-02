@@ -1,12 +1,12 @@
 import './OptionalButtons.css';
 import { TextButton } from '../TextButton/TextButton';
 
-export const OptionalButtons = () => {
+export const OptionalButtons = ({ handleClick, handleDeleteClick, handlePercentClick }) => {
   return (
     <section className="optional-buttons">
-      <TextButton text="AC" />
-      <TextButton text="(&ensp;)" />
-      <TextButton text="%" />
+      <TextButton value="AC" handleClick={handleDeleteClick} />
+      <TextButton value="(&ensp;)" handleClick={handleClick} />
+      <TextButton value="%" handleClick={handlePercentClick} />
     </section>
   );
 };

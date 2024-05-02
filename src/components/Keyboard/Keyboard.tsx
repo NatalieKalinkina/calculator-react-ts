@@ -5,15 +5,28 @@ import { OptionalButtons } from '../OptionalButtons/OptionalButtons';
 import { TextButton } from '../TextButton/TextButton';
 import { IconButton } from '../IconButton/IconButton';
 
-export const Keyboard = () => {
+export const Keyboard = ({ addValueToTask, deleteTask, addPercent }) => {
   return (
     <section className="keyboard">
-      <OptionalButtons />
-      <CountButtons />
-      <Numbers />
+      <OptionalButtons
+        handleClick={addValueToTask}
+        handleDeleteClick={deleteTask}
+        handlePercentClick={addPercent}
+      />
+      <CountButtons
+        handleClick={() => {
+          console.log('button is clicked');
+        }}
+      />
+      <Numbers handleClick={addValueToTask} />
       <div className="keyboard__bottom">
-        <IconButton type="delete" />
-        <TextButton text="." />
+        <IconButton
+          action="delete"
+          handleClick={() => {
+            console.log('button is clicked');
+          }}
+        />
+        <TextButton value="." handleClick={addValueToTask} />
       </div>
     </section>
   );

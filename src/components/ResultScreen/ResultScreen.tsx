@@ -1,10 +1,15 @@
 import './ResultScreen.css';
 
-export const ResultScreen = () => {
+type TProps = {
+  task: string;
+  result: string;
+};
+
+export const ResultScreen: React.FC<TProps> = ({ task, result }) => {
   return (
     <section className="result-screen">
-      <p className="result-screen__task">8+3+5+2</p>
-      <p className="result-screen__result">18</p>
+      <p className="result-screen__task">{task}</p>
+      <p className="result-screen__result">{result}</p>
     </section>
   );
 };

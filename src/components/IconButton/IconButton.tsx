@@ -1,11 +1,16 @@
 import './IconButton.css';
 
-export const IconButton = ({ type }) => {
+type TProps = {
+  action: string;
+};
+
+export const IconButton: React.FC<TProps> = ({ action, handleClick }) => {
   return (
     <button
+      type="button"
       className="button icon-button"
-      id={`icon-button_type_${type}`}
-      onClick={() => console.log({ type })}
+      id={`icon-button_type_${action}`}
+      onClick={handleClick}
     ></button>
   );
 };
