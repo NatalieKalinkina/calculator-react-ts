@@ -1,11 +1,12 @@
+import { FC, MouseEventHandler } from 'react';
 import './TextButton.css';
 
 type TProps = {
   value: string | number;
-  addValueToTask: string | number;
+  handleClick: MouseEventHandler<HTMLButtonElement>;
 };
 
-export const TextButton: React.FC<TProps> = ({ value, handleClick }) => {
+export const TextButton: FC<TProps> = ({ value, handleClick }) => {
   const onHandleClick = () => {
     handleClick(value);
   };

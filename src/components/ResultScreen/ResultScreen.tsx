@@ -1,8 +1,8 @@
 import './ResultScreen.css';
 
 type TProps = {
-  task: string;
-  result: string;
+  task: string | number;
+  result: string | number;
 };
 
 export const ResultScreen: React.FC<TProps> = ({ task, result }) => {

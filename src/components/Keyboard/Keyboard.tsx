@@ -5,7 +5,7 @@ import { OptionalButtons } from '../OptionalButtons/OptionalButtons';
 import { TextButton } from '../TextButton/TextButton';
 import { IconButton } from '../IconButton/IconButton';
 
-export const Keyboard = ({ addValueToTask, deleteTask, addPercent }) => {
+export const Keyboard = ({ addValueToTask, deleteTask, addPercent, countTotal }) => {
   return (
     <section className="keyboard">
       <OptionalButtons
@@ -13,18 +13,15 @@ export const Keyboard = ({ addValueToTask, deleteTask, addPercent }) => {
         handleDeleteClick={deleteTask}
         handlePercentClick={addPercent}
       />
-      <CountButtons
-        handleClick={() => {
-          console.log('button is clicked');
-        }}
-      />
+      <CountButtons handleClick={addValueToTask} handleTotalClick={countTotal}/>
       <Numbers handleClick={addValueToTask} />
       <div className="keyboard__bottom">
         <IconButton
           action="delete"
-          handleClick={() => {
-            console.log('button is clicked');
+          handleClick={(buttonValue) => {
+            console.log(buttonValue);
           }}
+          buttonValue='delete'
         />
         <TextButton value="." handleClick={addValueToTask} />
       </div>

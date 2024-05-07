@@ -1,7 +1,10 @@
+import { FC, MouseEventHandler } from 'react';
 import './Numbers.css';
 import { TextButton } from '../TextButton/TextButton';
 
-export const Numbers = ({ handleClick }) => {
+export const Numbers: FC<{ handleClick: MouseEventHandler<HTMLButtonElement> }> = ({
+  handleClick
+}) => {
   const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0].map(num => {
     return <TextButton value={num} key={num} handleClick={handleClick} />;
   });
