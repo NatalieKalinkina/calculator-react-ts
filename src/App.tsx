@@ -28,7 +28,7 @@ function App() {
   };
 
   const countTotal = () => {
-    setTask(eval(task));
+    setTask(eval(result));
     setResult('');
   }
 
