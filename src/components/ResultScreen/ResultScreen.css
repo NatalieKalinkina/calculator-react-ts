@@ -25,9 +25,5 @@
   font-size: 64px;
   font-weight: 500;
   color: #fff;
-  width: 100%;
   min-height: 74px;
-  text-overflow: clip;
-  white-space: nowrap;
-  overflow: hidden;
 }

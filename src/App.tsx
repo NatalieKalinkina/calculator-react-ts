@@ -13,7 +13,7 @@ function App() {
     if (task == '') {
       return
     } else {
-      setResult(eval(task + String(value)))
+      setResult(String(+eval(task + String(value)).toFixed(8)))
     };
   }
 
