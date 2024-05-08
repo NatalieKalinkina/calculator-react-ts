@@ -1,15 +1,16 @@
-import { FC, MouseEventHandler } from 'react';
+import { FC, MouseEvent} from 'react';
 import './TextButton.css';
 
-type TProps = {
-  value: string | number;
-  handleClick: MouseEventHandler<HTMLButtonElement>;
+type TTextButtonProps = {
+  value: number | string;
+  handleClick: (value: string | number) => void;
 };
 
-export const TextButton: FC<TProps> = ({ value, handleClick }) => {
-  const onHandleClick = () => {
-    handleClick(value);
+export const TextButton: FC<TTextButtonProps> = ({ value, handleClick }) => {
+  const onHandleClick = (e:MouseEvent<HTMLButtonElement>) => {
+    handleClick((e.target as HTMLButtonElement).value)
   };
+
 
   return (
     <button
@@ -17,6 +18,7 @@ export const TextButton: FC<TProps> = ({ value, handleClick }) => {
       className="button text-button"
       id={value == '0' ? `text-button_type_0` : ''}
       onClick={onHandleClick}
+      value={value}
     >
       {value}
     </button>

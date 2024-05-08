@@ -1,14 +1,14 @@
-import { FC, MouseEventHandler } from 'react';
+import { FC } from 'react';
 import './OptionalButtons.css';
 import { TextButton } from '../TextButton/TextButton';
 
-type TProps = {
-  handleClick: MouseEventHandler<HTMLButtonElement>;
-  handleDeleteClick: MouseEventHandler<HTMLButtonElement>;
-  handlePercentClick: MouseEventHandler<HTMLButtonElement>;
+type TOptionalButtonsProps = {
+  handleClick: (value: string | number) => void
+  handleDeleteClick: (value: string | number) => void
+  handlePercentClick: (value: string | number) => void
 };
 
-export const OptionalButtons: FC<TProps> = ({
+export const OptionalButtons: FC<TOptionalButtonsProps> = ({
   handleClick,
   handleDeleteClick,
   handlePercentClick

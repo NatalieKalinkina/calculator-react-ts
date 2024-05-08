@@ -1,15 +1,16 @@
-import { FC, MouseEventHandler } from 'react';
+import { FC, MouseEvent } from 'react';
 import './IconButton.css';
 
-type TProps = {
+type TIconButtonProps = {
   action: string;
-  handleClick: MouseEventHandler<HTMLButtonElement>;
   buttonValue: string;
+  handleClick: (value: string | number) => void
 };
 
-export const IconButton: FC<TProps> = ({ action, handleClick, buttonValue }) => {
-  const onHandleClick = () => {
-    handleClick(buttonValue);
+export const IconButton: FC<TIconButtonProps> = ({ action, handleClick, buttonValue }) => {
+  const onHandleClick = (e:MouseEvent<HTMLButtonElement>) => {
+    console.log((e.target as HTMLButtonElement).value)
+    handleClick((e.target as HTMLButtonElement).value)
   };
 
   return (
